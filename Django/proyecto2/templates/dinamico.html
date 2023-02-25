@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang:"en">
+<head>
+    <meta charset= "UTF-8">
+    <meta http>
+    <title>Documentos</title>
+</head>
+<body>
+    <h1>Hola Mundo este es dinamico</h1>
+    <h2>Hola {{name}}</h2>
+    <h3>Categoria</h3>
+    <ul>
+        {% for categoria in categoria %}
+           {% if categoria == 'moto' %}
+              <li><b>{{ categoria }}</b></li>
+           {% else %}
+            <li>{{categoria}}</li>
+            {% endif%}
+        {% endfor %}
+        <h5>Total de categoria : {{categoria|Length}}</h5>
+    </ul>
+</body>
+</html>
