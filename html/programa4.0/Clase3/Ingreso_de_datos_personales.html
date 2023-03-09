@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ingreso de Datos Personales</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Datos Personales</h1>
+        <form action="http://www.example.com/datos.php"
+            method = get >
+            <p>Nombre:
+                <br>
+            <input type = "text" maxlength="20" name = "Nombre" required>
+            </p>
+            <p>Apellido:
+                <br>
+            <input type = "text" maxlength="25" name = "Apellido" required>
+            </p>
+            <p>DNI:
+                <br>
+                <input type = "number" required>
+            </p>
+            <p>Fecha de Nacimiento</p>
+            <input type="date" value="2017-06-01" />
+            <p>Correo:
+                <br>
+                <input type = "email" required>
+            </p>
+            <p>Seleccione el Pais de Residencia:
+                <select name="Pais de Residencia">
+                    <option value= "Argentina" >Argentina</option>
+                    <option value= "Bolivia" >Bolivia</option>
+                    <option value= "Brasil" >Brasil</option>
+                    <option value= "Colombia" >Colombia</option>
+                    <option value= "Costa Rica" >Costa Rica</option>
+                    <option value= "Chile" >Chile</option>
+                    <option value= "Mexico" >Mexico</option>
+                    <option value= "Nicaragua" >Nicaragua</option>
+                    <option value= "Panama" >Panama</option>
+                    <option value= "Paraguay" >Paraguay</option>
+                    <option value= "Peru" >Peru</option>
+                    <option value= "Uruguay" >Uruguay</option>
+                    <option value= "Venezuela" >Venezuela</option>
+                    <option value= "Otro" >Otro</option>
+                </select> </p>
+            <p>Estado Civil:
+            <select name="Estado Civil">
+                <option value= "Soltera/o" >Soltera/o</option>
+                <option value= "Casada/o" >Casada/o</option>
+                <option value= "Divorciada/o" >Divorciada/o</option>
+                <option value= "Viuda/o" >Viuda/o</option>
+                <option value= "Conviviente" >Conviviente</option>
+            </select> </p>
+                <p>Elija los Intereses de su preferencia:</p>
+                <input type="checkbox" name="intereses" value="Culturales"> Culturales<br>
+                <input type="checkbox" name="intereses" value="Deportivos"> Deportivos<br>
+                <input type="checkbox" name="intereses" value="Turisticos"> Turisticos<br>
+                <input type="checkbox" name="intereses" value="Sociales"> Sociales<br>
+                <input type="checkbox" name="intereses" value="Otros"> Otros<br>
+                <p>Descripcion de Intereses </p>
+            <textarea name = "Descripcion de Intereses" maxlength="400" cols = "50" rows = "16">
+            Ingresa aquí tus comentarios…
+            </textarea>
+            <br>
+            <br>
+            <input type="checkbox" name="Informacion" value="1"> Desea Recibir Informacion Adicional?</br>
+            <p><input type="image" name="botondeenvio" width="25" height="25" src="https://w7.pngwing.com/pngs/841/271/png-transparent-computer-icons-send-miscellaneous-angle-triangle-thumbnail.png" alt="Enviar formulario">Enviar</p>
+            <p><INPUT TYPE="reset" VALUE="Borrar datos"></p>
+        </form>
+    </body>
+</html>
